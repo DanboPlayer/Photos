@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de inicio</title>
+	<style>
+		
+		header {
+			background-color: black;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		nav {
+			background-color: #ddd;
+			overflow: hidden;
+		}
+		nav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #ccc;
+			color: white;
+		}
+		section {
+			padding: 50px;
+			text-align: center;
+		}
+		
+		body {
+			font-family: "Helvetica Neue", Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+		}
+
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 50px auto;
+			max-width: 1200px;
+		}
+
+		.image-container {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 40px;
+			position: relative;
+		}
+
+		.image-container img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 10px;
+			transition: all 0.3s ease-in-out;
+			transform: translateY(100%);
+		}
+
+		.caption:hover {
+			transform: translateY(0);
+		}
+
+		.caption h3 {
+			margin: 0 0 10px;
+			font-family: "Raleway", sans-serif;
+			font-size: 20px;
+			font-weight: 600;
+			color: #333;
+		}
+
+		.caption p {
+			margin: 0;
+			font-family: "Open Sans", sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #666;
+		}
+
+		.info {
+			max-width: 1200px;
+			margin: 50px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.animal-info {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 40px;
+		}
+
+		.animal-info h2 {
+			font-family: "Raleway", sans-serif;
+			font-size: 24px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		.animal-info p {
+			font-family: "Open Sans", sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #666;
+			margin: 0;
+		}
+	</style>
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Veterinaria XYZ</h1>
+	</header>
+	<nav>
+		<a href="#">Inicio</a>
+		<a href="#">Servicios</a>
+		<a href="#">Acerca de nosotros</a>
+		<a href="#">Contacto</a>
+	</nav>
+	<section>
+		<h2>Bienvenidos a Veterinaria XYZ</h2>
+		<p>Somos una clínica veterinaria dedicada a ofrecer los mejores cuidados y servicios para tus mascotas.</p>
+		<button>Agendar cita</button>
+	</section>
+	
+	
+	<div class="gallery">
+		<div class="image-container">
+			<img src="imagen1.jpg" alt="Imagen 1">
+			<div class="caption">
+				<h3>Perro feliz</h3>
+				<p>Este es Max, un perro feliz que recién salió de la peluquería.</p>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="imagen2.jpg" alt="Imagen 2">
+			<div class="caption">
+				<h3>Gato juguetón</h3>
+				<p>Este es Whiskers, un gato juguetón que ama perseguir pelotas de papel.</p>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="imagen3.jpg" alt="Imagen 3">
+			<div class="caption">
+				<h3>Conejo adorable</h3>
+				<p>Este es Benny, un conejo adorable que ama comer zanahorias.</p>
+			</div>
+		</div>
+	</div>
+	<div class="info">
+		<div class="animal-info">
+			<h2>Perros</h2>
+			<p>Los perros son una de las mascotas más populares del mundo. Son leales, cariñosos y protectores, lo que los convierte en compañeros ideales para muchas personas. Los perros necesitan ejercicio regular y una dieta saludable para mantenerse en forma y saludables. Asegúrate de llevar a tu perro al veterinario para sus chequeos regulares y vacunas.</p>
+		</div>
+		<div class="animal-info">
+			<h2>Gatos</h2>
+			<p>Los gatos son animales independientes pero cariñosos. A menudo se los describe como misteriosos y elegantes. Los gatos necesitan ejercicio y una dieta saludable para mantenerse saludables y en forma. También es importante llevar a tu gato al veterinario para chequeos regulares y vacunas.</p>
+		</div>
+		<div class="animal-info">
+			<h2>Conejos</h2>
+			<p>Los conejos son animales adorables y divertidos que a menudo se mantienen como mascotas. Necesitan mucho espacio para correr y jugar, así como una dieta equilibrada y una higiene adecuada. Asegúrate de llevar a tu conejo al veterinario para chequeos regulares y vacunas.</p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
